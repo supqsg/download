@@ -1,140 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>下载</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <style type="text/css">
+            /* 禁用iPhone中Safari的字号自动调整 */
+            html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta itemprop="name" content="爱情鸟">
-    <meta name="keywords" content="爱情鸟" />
-    <meta name="description" content="爱情鸟" />
-    <!--分享卡标题预埋meta-->
-    <meta name="description" itemprop="description" content="爱情鸟" />
-    <!--分享卡描述预埋meta-->
-    <!--分享卡图片URL预埋meta-->
-    <title>爱情鸟app-下载</title>
-    <link rel="stylesheet" href="./css/public.css">
-    <link rel="stylesheet" href="./css/download.css">
-    <!-- <script>
-        // 移动端跳转
-        var OS = function() {
-            var a = navigator.userAgent,
-                b = /(?:Android)/.test(a),
-                d = /(?:Firefox)/.test(a),
-                e = /(?:Mobile)/.test(a),
-                f = b && e,
-                g = b && !f,
-                c = /(?:iPad.*OS)/.test(a),
-                h = !c && /(?:iPhone\sOS)/.test(a),
-                k = c || g || /(?:PlayBook)/.test(a) || d && /(?:Tablet)/.test(a),
-                a = !k && (b || h || /(?:(webOS|hpwOS)[\s\/]|BlackBerry.*Version\/|BB10.*Version\/|CriOS\/)/.test(a) || d && e);
-            return {
-                android: b,
-                androidPad: g,
-                androidPhone: f,
-                ipad: c,
-                iphone: h,
-                tablet: k,
-                phone: a
+            /* 取消链接高亮  */
+            body,div{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+
+            /* 图片自适应 */
+            img{width:100%;height:auto;width:auto\9; /* ie8 */-ms-interpolation-mode:bicubic;/*为了照顾ie图片缩放失真*/}
+
+            /* 初始化 */
+            body,div,{margin:0;padding:0;border:none;}
+            body{font:12px Microsoft YaHei,'宋体' Tahoma,Arial,sans-serif;color:#555;background-color:#eee;}
+            a{text-decoration:none;color:#969696;font-family:Microsoft YaHei,Tahoma,Arial,sans-serif;}
+            a:hover{color:#FED503;text-decoration:none;}
+            img{border:none;}
+
+            html{
+                font-size:40px;
             }
-        }();
-        if (OS.phone || OS.ipad) {
-            location.href = './mobile/index.html';
-        }
-    </script> -->
-    
-</head>
+            body{
+                background:#fff;
+            }
 
-<body>
-    <div class="header scrollTop">
-        <div class="h-inner">
-            <h1 class="logo1">
-                <a href="./index.html"></a>
-            </h1>
-            <div class="nav">
-                <ul class="nav-ul">
-                    <!-- <li class="nav-item"><a href="./index.html">首页</a></li> -->
-                    <li class="nav-item"><a href="./download.html" class="active">下载</a></li>
-                    <!-- <li class="nav-item"><a href="">用户故事</a></li> -->
-                    <!-- <li class="nav-item"><a href="./support.html">支持</a></li> -->
-                </ul>
-            </div>
+            .logo{
+                margin:3rem 0 ;
+                text-align:center;
+            }
+            .logo img{
+                width:5rem;
+                height:5rem;
+            }
+
+            .down{
+                margin:0 auto;
+                width:7rem;
+            }
+            .d-item-title {
+                line-height: 34px;
+                font-size: 28px;
+                color: #333;
+                text-align: center
+            }
+            .down a{
+                display: inline-block;
+                width:7rem;
+                height:2.5rem;
+                line-height: 2.5rem;
+                text-align: center;
+                font-size:0.8rem;
+                color:#fff;
+                background: #56bc94;
+            }
+            .down p{
+                font-size:0.6rem;
+                color:#555;
+                width:7rem;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="logo">
+            <div class="d-item-title">安装包下载</div>
+            <img src="img/3.png" >      
         </div>
-    </div>
-    <div class="d-content">
-        <div class="a-download clear">
-            <div class="down-ietm iphone">
-                <div class="down-ietm-inner">
-                    <div class="logo-area">
-                        <div class="itemlogo"></div>
-                    </div>
-                    <div class="info-area">
-                        <div class="d-item-title">iPhone版</div>
-                        <!-- <div class="d-item-desc">版本2.1.5 <span class="update-time">2018-02-02</span></div> -->
-                        <!-- <div class="down-btn"><a>下载</a></div> -->
-                        <div class="scan">请用手机扫码下载</div>
-                        <!-- <div class="d-item-log"><a href="./support.html">更新日志</a></div> -->
-                    </div>
-
-                </div>
-            </div>
-            <div class="down-ietm android">
-                <div class="down-ietm-inner">
-                    <div class="logo-area">
-                        <div class="itemlogo"></div>
-                    </div>
-                    <div class="info-area">
-                        <div class="d-item-title">Android版</div>
-                        <!-- <div class="d-item-desc">版本2.1.5 <span class="update-time">2018-01-31</span></div> -->
-                        <!-- <div class="down-btn"><a href="#" onClick="tcssReport('tim.downloads.android');">下载</a></div> -->
-                        <div class="scan">请用手机扫码下载</div>
-                        <!-- <div class="d-item-log"><a href="./support.html">更新日志</a></div> -->
-                    </div>
-                </div>
-            </div>
+        <div class="logo">
+            <div class="d-item-title">苹果udid获取</div>
+            <img src="img/uuid.png" >      
         </div>
-        <!-- <div class="macqq">
-            Mac QQ 现在已支持在线文档和日程功能，<a href="#" onClick="tcssReport('tim.downloads.macqq');">立即下载</a>。
-        </div> -->
-    </div>
-    <!-- <div class="footer d-page">
-        <p><span class="useradjest"><a href="http://play.mobile.qq.com/yy/eim/help/serverinfo.html">用户协议</a></span><span>反馈群：</span>XXXXXXXXXXX</p>
-        <p class="copy-right">Copyright © 1998-<script>document.write(new Date().getFullYear())</script> Tencent. All Rights Reserved. 腾讯公司 版权所有</p>
-    </div> -->
-
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/bj-report-tryjs.min.js"></script>
-    <script>
-        window.tcssReport = function(hottag, domain) { /*点击流上报*/
-            if (typeof pgvSendClick == 'function') {
-                pgvSendClick({
-                    virtualDomain: domain || "tim.qq.com",
-                    hottag: hottag
-                });
-            }
-        };
-        tcssReport('tim.downloads.pv')
-            // 不同下载hover效果
-        $('.down-ietm').hover(function() {
-            $(this).addClass('hover')
-            $(this).find('.itemlogo').addClass('animation')
-        }, function() {
-            $(this).removeClass('hover')
-            $(this).find('.itemlogo').removeClass('animation')
-        })
-
-        function initFooter() {
-            var footerTop = $('.footer').offset().top
-            var wh = $(window).height()
-            var fh = $('.footer').height()
-            if (footerTop < wh - fh) {
-                $('.footer').addClass('fixed')
-            }
-        }
-        initFooter()
-    </script>
-
-
-</body>
-
+    </body>
 </html>
